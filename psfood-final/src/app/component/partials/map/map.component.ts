@@ -1,6 +1,7 @@
-import { Component, ElementRef, Inject, Input, OnInit, ViewChild, AfterViewInit, OnChanges } from '@angular/core';
+import { Component, ElementRef, Inject, Input, ViewChild, AfterViewInit, OnChanges } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { LatLng, LatLngExpression, LatLngTuple, LeafletMouseEvent, Map, Marker, icon, map, marker, tileLayer } from 'leaflet';
+import { LatLngTuple, LeafletMouseEvent, Map, Marker, icon, tileLayer } from 'leaflet';
+//import { LatLng, LatLngExpression, LatLngTuple, LeafletMouseEvent, Map, Marker, icon, map, marker, tileLayer } from 'leaflet';
 import { LocationService } from '../../../services/location.service';
 import { Order } from '../../../shared/models/order';
 import * as L from 'leaflet';
@@ -17,7 +18,7 @@ export class MapComponent implements OnChanges, AfterViewInit {
   @Input()
   readonly!: boolean;
   private readonly MARKER_ZOOM_LEVEL = 16;
-  private readonly MARKER_ICON = icon({
+  private readonly MARKER_ICON = L.icon({
     iconUrl:
       'https://res.cloudinary.com/foodmine/image/upload/v1638842791/map/marker_kbua9q.png',
     iconSize: [42, 42],
@@ -67,8 +68,8 @@ export class MapComponent implements OnChanges, AfterViewInit {
 
   initializeMap() {
     // Initialize map only if the map container element is present
-    if (this.mapRef.nativeElement) {
-      this.map = map(this.mapRef.nativeElement, {
+    if (this.mapRef.nativeElement && !this.map) {
+      this.map = L.map(this.mapRef.nativeElement, {
         attributionControl: false
       }).setView(this.DEFAULT_LATLNG, 1);
 
@@ -88,14 +89,14 @@ export class MapComponent implements OnChanges, AfterViewInit {
 
   }
 
-  setMarker(latlng: LatLngExpression) {
-    this.addressLatLng = latlng as LatLng;
+  setMarker(latlng: L.LatLngExpression) {
+    this.addressLatLng = latlng as L.LatLng;
     if (this.currentMarker) {
       this.currentMarker.setLatLng(latlng);
       return;
     }
 
-    this.currentMarker = marker(latlng, {
+    this.currentMarker = L.marker(latlng, {
       draggable: true,
       icon: this.MARKER_ICON
     }).addTo(this.map);
@@ -106,7 +107,7 @@ export class MapComponent implements OnChanges, AfterViewInit {
 
   }
 
-  set addressLatLng(latlng: LatLng) {
+  set addressLatLng(latlng: L.LatLng) {
 
     if (!latlng.lat.toFixed) return;
 

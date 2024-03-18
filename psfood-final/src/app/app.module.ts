@@ -20,21 +20,15 @@ import { OrderItemsListComponent} from "./component/partials/order-items-list/or
 import { ReactiveFormsModule } from '@angular/forms';
 import { TextInputComponent} from "./component/partials/text-input/text-input.component";
 import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-page.component';
-import { MapComponent } from './component/partials/map/map.component';
 import { PaymentPageComponent } from './component/pages/payment-page/payment-page.component';
 import { PaypalButtonComponent } from './component/partials/paypal-button/paypal-button.component';
 import { NotFoundComponent } from './component/partials/not-found/not-found.component';
 import { ToastrModule} from "ngx-toastr";
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 import { OrderTrackPageComponent } from './component/pages/order-track-page/order-track-page.component';
+import { MapComponent} from "./component/partials/map/map.component";
 
 // import { LoginComponent } from './login/login.component';
-
-
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -52,11 +46,11 @@ import { OrderTrackPageComponent } from './component/pages/order-track-page/orde
     OrderItemsListComponent,
     TextInputComponent,
     CheckoutPageComponent,
-    MapComponent,
     PaymentPageComponent,
     PaypalButtonComponent,
     NotFoundComponent,
     OrderTrackPageComponent,
+    MapComponent
 
     // LoginComponent
   ],

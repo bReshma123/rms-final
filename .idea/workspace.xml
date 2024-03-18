@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd145d98-d9ab-47c1-8a58-c04a8986a65f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/psfood-final/src/app/auth/auth.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/psfood-final/src/app/auth/guards/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/psfood-final/src/app/routers/food.router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/component/pages/cart-page/cart-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/component/pages/cart-page/cart-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/component/pages/checkout-page/checkout-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/component/pages/checkout-page/checkout-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/component/pages/checkout-page/checkout-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/component/pages/checkout-page/checkout-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/psfood-final/src/app/component/partials/map/map.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/component/partials/map/map.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/component/partials/order-items-list/order-items-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/component/partials/order-items-list/order-items-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/component/partials/text-input/text-input.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/component/partials/text-input/text-input.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/component/partials/text-input/text-input.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/component/partials/text-input/text-input.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/routers/order.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/routers/order.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/app/routers/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/app/routers/user.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psfood-final/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/psfood-final/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +45,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance": "JavaScript: code vision performance watcher",
+    "Notification.DoNotAsk-JavaScript: Code Vision Performance": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jsx.switch.disabled": "true",
@@ -70,7 +88,10 @@
       <workItem from="1710148622879" duration="4677000" />
       <workItem from="1710162069313" duration="2861000" />
       <workItem from="1710218846773" duration="7405000" />
-      <workItem from="1710239350017" duration="3313000" />
+      <workItem from="1710239350017" duration="9923000" />
+      <workItem from="1710349872461" duration="10178000" />
+      <workItem from="1710429650971" duration="14832000" />
+      <workItem from="1710602272401" duration="9024000" />
     </task>
     <servers />
   </component>

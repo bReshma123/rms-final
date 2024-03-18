@@ -11,6 +11,7 @@ import { CheckoutPageComponent} from "./component/pages/checkout-page/checkout-p
 import { PaymentPageComponent } from './component/pages/payment-page/payment-page.component';
 import { NotFoundComponent } from "./component/partials/not-found/not-found.component";
 import {OrderTrackPageComponent} from "./component/pages/order-track-page/order-track-page.component";
+import {AuthGuard} from "./auth/guards/auth.guard";
 
 
 const routes: Routes = [
@@ -26,8 +27,8 @@ const routes: Routes = [
   {path:'checkout-page',component:CheckoutPageComponent},
   // {path:'payment',component:PaymentPageComponent},
   {path:'not-found',component:NotFoundComponent},
-  {path:'track/:orderId', component: OrderTrackPageComponent},
-  { path: 'payment-page', component: PaymentPageComponent }
+  {path:'track/:orderId', component: OrderTrackPageComponent, canActivate:[AuthGuard]},
+  {path: 'payment-page', component: PaymentPageComponent, canActivate:[AuthGuard]}
 
 
 ];
